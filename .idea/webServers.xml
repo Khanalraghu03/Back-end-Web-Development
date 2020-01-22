@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ab4acbd7-93fa-4e28-b5cb-75245e877e75" name="Altervista WebDev" url="http://ftp.rkhanal.altervista.org">
+        <fileTransfer host="ftp.rkhanal.altervista.org" port="21" rootFolder="/WebDev">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
