@@ -30,7 +30,6 @@
                 } else {
                     if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
                         $emailMSG = "Email is not of correct format!";
-
                     }
                 }
                 if(empty($gender)) {
