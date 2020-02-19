@@ -139,7 +139,6 @@
 <?php
     if($_POST["submit"]) {
         if (!empty($name) && !empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
-
             echo "Your test results: <br/>";
             echo "Name: " . $name . "<br/>";
             echo "Email: " . $email . "<br/>";
