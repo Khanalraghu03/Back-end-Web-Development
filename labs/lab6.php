@@ -23,6 +23,7 @@ if($_POST['submit']) {
     $day = validateInput($_POST['day']);
     $year = validateInput($_POST['year']);
 
+
     if (empty($name)) {
         $nameMSG = "Missing";
     }

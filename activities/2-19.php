@@ -62,8 +62,9 @@ $students[5] = array("Jason", 26, "Male");
 $name = "Jason";
 $found = 0;
 foreach ($students as $person) {
-    $found++;
+
     if($name == $person[0]) {
+        $found++;
         echo "Name: ".$person[0]." Age: ".$person[1]." Gender: ".$person[2]."<br/>";
     }
 }
@@ -116,7 +117,7 @@ echo "There are ".$found." oldest student <br/>";
 echo "<hr/>";
 
 //Find the average age of all the students
-    // ==> add all the age of the student and divide by the number of the student
+// ==> add all the age of the student and divide by the number of the student
 $totalStudents = 0;
 $totalAge= 0;
 foreach($students as $person) {
