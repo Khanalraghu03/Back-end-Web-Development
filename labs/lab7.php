@@ -37,13 +37,10 @@ function validateInput($input) {
 
 if($_POST['submit']){
    $search = validateInput($_POST['search']);
-
    if(empty($search)) {
        $searchMSG = " Required";
    }
-
    $searchBy = $_POST['query'];
-
 }
 ?>
 
@@ -99,7 +96,7 @@ if($_POST['submit']){
                     }
                 } else if ($searchBy == "State") {
                             //Its a string & !number
-                    foreach ($CitiInfo as $index => $stateInfos) {
+                    foreach ($CitiInfo as $stateInfos) {
                         echo "<tr>";
 
                         //it's a string & !number
@@ -111,13 +108,12 @@ if($_POST['submit']){
                             }
                             $found++;
                         }
-
                         echo "</tr>";
 
                     }
                 } else if($searchBy == "Income"){
-                            //it's a number & !string
-                    foreach ($CitiInfo as $index => $incomeInfos) {
+                    //it's a number & !string
+                    foreach ($CitiInfo as $incomeInfos) {
                         echo "<tr>";
                         //it's a string & !number
                         if($incomeInfos[3] >= $search)
@@ -133,7 +129,6 @@ if($_POST['submit']){
                 }
 
             echo "</table>";
-
             echo "<p style='text-align: center'> We found " .$found. " results matching your search. </p>";
 
             }
