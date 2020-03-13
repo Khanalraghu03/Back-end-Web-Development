@@ -1,4 +1,5 @@
 <?php
+$name = $email = "";
 function validate_input($input) {
     $input = trim($input);
     $input = htmlspecialchars($input);
