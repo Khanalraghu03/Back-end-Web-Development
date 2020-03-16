@@ -49,7 +49,6 @@ function UploadFile($tagName, $fileAllowed, $sizeAllowed, $overWriteAllowed) {
     }
 }
 
-
 ?>
 
 
@@ -93,8 +92,6 @@ function UploadFile($tagName, $fileAllowed, $sizeAllowed, $overWriteAllowed) {
         $email = validateInput($_POST['email']);
         $heDegree = $_POST['education'];
         $posApplied = $_POST['position'];
-
-
 
         echo "<hr>";
         echo "<table border=1>";
